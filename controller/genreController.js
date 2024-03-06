@@ -1,6 +1,6 @@
 const { body, validationResult } = require("express-validator");
-const Genre = require("../models/genre");
-const Book = require("../models/book")
+const Genre = require("../model/genre");
+const Book = require("../model/book")
 const asyncHandler = require("express-async-handler");
 
 // Display list of all Genre.

@@ -1,5 +1,5 @@
-const Author = require("../models/author");
-const Book = require("../models/book");
+const Author = require("../model/author");
+const Book = require("../model/book");
 const asyncHandler = require("express-async-handler");
 const { body, validationResult } = require('express-validator');
 
