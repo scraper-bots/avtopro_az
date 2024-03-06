@@ -1,13 +1,12 @@
 const express = require('express');
 const app = express();
+const libraryRoutes = require('./routes/library');
 
 // Middleware setup
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); // Parse JSON request bodies
+app.use(express.urlencoded({ extended: true })); // Parse URL-encoded request bodies
 
-// Routes setup
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
-});
+// Route setup
+app.use('/library', libraryRoutes);
 
 module.exports = app;
