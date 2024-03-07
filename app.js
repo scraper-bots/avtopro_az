@@ -6,13 +6,10 @@ var logger = require('morgan');
 const compression = require("compression");
 const helmet = require("helmet");
 const RateLimit = require("express-rate-limit");
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const catalogRouter = require("./routes/catalog");
-
 require('dotenv').config();
-
 var app = express();
 
 
@@ -45,12 +42,6 @@ app.use(
   }),
 );
 
-// for dev (prevents http request from being upgraded to https)
-// app.use(
-//   helmet({
-//     contentSecurityPolicy: false,
-//   })
-// );
 app.use(limiter);
 app.use(logger('dev'));
 app.use(express.json());
