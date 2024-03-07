@@ -62,16 +62,19 @@ a {
 
 #footer {
   grid-area: foot;
-  /* background-color: limegreen; */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
+    background-color: cadetblue;
+
 }
 
 #content-container {
   grid-area: main;
   padding: 2rem;
+    background-color: cadetblue;
+
 }
 
 form {
@@ -90,6 +93,8 @@ form input, form select, form textarea {
   border: 1px solid lightgray;
   border-radius: 5px;
   font-size: 1rem;
+    background-color: cadetblue;
+
 }
 
 form input[type="checkbox"] {
@@ -115,6 +120,7 @@ form label {
   display: flex;
   align-items: flex-start;
   gap: 5px;
+    background-color: cadetblue;
 }
 
 form button {
@@ -122,8 +128,8 @@ form button {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: none;
-    background-color: cadetblue;
   color: white;
+  background-color: cadetblue;
 }
 
 #author_form button:hover {
@@ -137,8 +143,8 @@ form button {
 
 #errors {
   width: fit-content;
-  background-color: cadetblue;
   color: #f22128;
   border-radius: 5px;
   padding: 1rem 3rem;
+  background-color: cadetblue;
 }
